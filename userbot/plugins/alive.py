@@ -158,10 +158,10 @@ botname = Config.BOT_USERNAME
 
 @bot.on(admin_cmd(pattern="alive$"))
 @bot.on(admin_cmd(pattern="alive$", allow_sudo=True))
-async def python_a(event):
+async def mamba_a(event):
     try:
-        python = await bot.inline_query(botname, "alive")
-        await python[0].click(event.chat_id)
+        mamba = await bot.inline_query(botname, "alive")
+        await mamba[0].click(event.chat_id)
         if event.sender_id == MAMBA_X_SUPPORT:
             await event.delete()
     except (noin, dedbot):
