@@ -162,7 +162,7 @@ async def mamba_a(event):
     try:
         mamba = await bot.inline_query(botname, "alive")
         await mamba[0].click(event.chat_id)
-        if event.sender_id == MAMBA_X_SUPPORT:
+        if event.sender_id == OWNER_ID:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
