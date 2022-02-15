@@ -7,18 +7,18 @@ from userbot.Config import Config
 from var import Var
 BOTLOG = True
 StartTime = time.time()
-PYTHONversion = "𝚅9.0.8"
-botversion = "𝚅9.0.8"
+MAMBAversion = "2.0"
+botversion = "2.0"
 
 os.system("pip install --upgrade pip")
-if Var.PYTHON_STRING:
-    session_name = str(Var.PYTHON_STRING)
+if Var.MAMBA_STRING:
+    session_name = str(Var.MAMBA_STRING)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-DEVS = ["2043276182", "2041065447"]
+DEVS = ["5038173179"]
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
@@ -30,7 +30,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-PYTHON_ID = ["2041065447", 2043276182]
+PYTHON_ID = ["5038173179"]
 
 """ PPE initialization. """
 
@@ -53,7 +53,7 @@ if bool(ENV):
     else:
         basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
                     level=INFO)
-    LOGS = getLogger("[Pythonẞø† 9.0.8]")
+    LOGS = getLogger("[MAMBABOT 2.0]")
 
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
