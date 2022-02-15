@@ -41,7 +41,7 @@ else:
         ).start(bot_token=Var.BOT_TOKEN)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
-        bot.loop.run_until_complete(add_bot(Var.BOT_USERNAME))
+        bot.run_until_complete(add_bot(Var.BOT_USERNAME))
         print("Startup Completed")
     else:
         bot.start()
@@ -90,7 +90,7 @@ async def assistant():
     else:
         print("Addons Not Loading")
 """
-bot.loop.run_until_complete(module())
+bot.run_until_complete(module())
 
 print(f"""『🔱MAMBA USERBOT🔱』➙𖤍࿐ IS ON!!! MAMBA VERSION :- {MAMBAversion}
 TYPE :- " .gpromote @BLACKMAMBA_OFFICIAL " OR .python OR .ping CHECK IF I'M ON!
