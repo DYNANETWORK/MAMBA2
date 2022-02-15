@@ -34,5 +34,5 @@ with TelegramClient(StringSession(), APP_ID, API_HASH) as MAMBA:
     )
     omk = MAMBABOT.send_message("me", f"`{MAMBABOT.session.save()}`")
     omk.reply(
-        "The above is the `MAMBA_STRING` #POWERFUL [MAMBABOT](https://t.me/MAMBA_X_SUPPORT)"
+        "The above is the `MAMBA_STRING` [MAMBABOT](https://t.me/MAMBA_X_SUPPORT)"
     )
