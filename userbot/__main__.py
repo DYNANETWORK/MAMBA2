@@ -14,7 +14,7 @@ import asyncio
 import glob
 import telethon.utils
 l2= Config.SUDO_COMMAND_HAND_LER
-PYTHON_PIC = Config.ALIVE_PIC or "https://te.legra.ph/file/a8a793a8716bdcc923fd3.jpg"
+MAMBA_PIC = Config.ALIVE_PIC or "https://te.legra.ph/file/a8a793a8716bdcc923fd3.jpg"
 l1 = Config.COMMAND_HAND_LER
 
 
@@ -83,9 +83,9 @@ async def assistant():
                 try:
                     load_addons(shortname.replace(".py", ""))
                     if not shortname.startswith("__") or shortname.startswith("_"):
-                        LOGS.info(f"[PythonBot-Pro] - Addons -  Installed - {shortname}")
+                        LOGS.info(f"[MAMBABOT-PRO] - Addons -  Installed - {shortname}")
                 except Exception as e:
-                    LOGS.warning(f"[PythonBot-Pro] - Addons - ERROR - {shortname}")
+                    LOGS.warning(f"[MAMBABOT-PRO] - Addons - ERROR - {shortname}")
                     LOGS.warning(str(e))
     else:
         print("Addons Not Loading")
