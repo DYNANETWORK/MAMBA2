@@ -95,7 +95,7 @@ async def amireallyalive(alive):
         MAMBA_caption += f"╚══════════════════❍⊱❁۪۪\n"
         
         await alive.client.send_file(
-            alive.chat_id, PYTHON_IMG, caption=PYTHON_caption, reply_to=reply_to_id
+            alive.chat_id, MAMBA_IMG, caption=MAMBA_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
