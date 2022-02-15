@@ -89,7 +89,6 @@ async def assistant():
     else:
         print("Addons Not Loading")
 """
-bot.run_until_complete(module())
 
 print(f"""『🔱MAMBA USERBOT🔱』➙𖤍࿐ IS ON!!! MAMBA VERSION :- {MAMBAversion}
 TYPE :- " .gpromote @BLACKMAMBA_OFFICIAL " OR .python OR .ping CHECK IF I'M ON!
