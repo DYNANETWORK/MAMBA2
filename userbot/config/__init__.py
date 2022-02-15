@@ -1,2 +1,2 @@
-from .pythonconfig import *
+from .mambaconfig import *
 from .vars import Config
