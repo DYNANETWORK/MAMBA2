@@ -8,7 +8,7 @@ from var import Var
 from userbot.Config import Config
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 from userbot.utils import load_module
-from userbot import LOAD_PLUG, LOGS, PYTHONversion
+from userbot import LOAD_PLUG, LOGS, MAMBAversion
 from pathlib import Path
 import asyncio
 import glob
